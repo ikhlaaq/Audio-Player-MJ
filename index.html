@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audio Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="audio-image">
+            <img class="cover" />
+        </div>
+        <div id="audio-player">
+            <div id="audio-info">
+                <span class="artist"></span> -
+                <span class="title"></span>
+            </div>
+            <input id="volume" type="range" min="0" max="10" value="5" />
+            <br>
+            <div id="buttons">
+                <span>
+                    <button id="prev"></button>
+                    <button id="play"></button>
+                    <button id="pause"></button>
+                    <button id="stop"></button>
+                    <button id="next"></button>
+                </span>
+            </div>
+            <div class="clearfix"></div>
+            <div id="tracker">
+                <div id="progressBar">
+                    <span id="progress"></span>
+                </div>
+                <span id="duration"></span>
+            </div>
+            <div class="clearfix"></div>
+            <ul id="playlist" class="hidden">
+                <li song="Man In The Mirror.mp3" cover="cover1.jpg" artist="Michael Jackson">Man In The Mirror</li>
+                <li song="Thriller.mp3" cover="cover1.jpg" artist="Michael Jackson">Thriller</li>
+                <li song="Billie Jean.mp3" cover="cover1.jpg" artist="Michael Jackson">Billie Jean</li>
+                <li song="Smooth Criminal.mp3" cover="cover1.jpg" artist="Michael Jackson">Smooth Criminal</li>
+                <li song="Beat It.mp3" cover="cover1.jpg" artist="Michael Jackson">Beat It</li>
+                <li song="Hold My Hand.mp3" cover="cover1.jpg" artist="Michael Jackson">Hold My Hand</li>
+                <li song="Love Never Felt So Good.mp3" cover="cover1.jpg" artist="Michael Jackson">Love Never Felt So Good</li>
+                <li song="Dirty Diana.mp3" cover="cover1.jpg" artist="Michael Jackson">Dirty Diana</li>
+                <li song="The Way You Make Me Feel.mp3" cover="cover1.jpg" artist="Michael Jackson">The Way You Make Me Feel</li>
+                <li song="Black Or White.mp3" cover="cover1.jpg" artist="Michael Jackson">Black Or White</li>
+            </ul>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; Miksid 2018-03-16</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
